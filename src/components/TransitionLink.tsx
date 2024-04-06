@@ -6,9 +6,10 @@ import { useGSAP } from "@gsap/react"
 interface Props {
   href: string
   label: string
+  className: string
 }
 
-const TransitionLink = ({ href, label }: Props) => {
+const TransitionLink = ({ href, label, className="text-p lg:text-p-lg" }: Props) => {
   const router = useRouter()
   const pathname = usePathname()
 
@@ -20,7 +21,7 @@ const TransitionLink = ({ href, label }: Props) => {
 
   return (
     <button
-      className="text-p"
+      className={className}
       onClick={handleClick}
     >
       {label}

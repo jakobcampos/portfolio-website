@@ -4,10 +4,14 @@ import gsap from "gsap";
 
 interface AnimationOptions {
     delay?: number;
+    duration?: number;
 }
 
 export const slideUp = (variants: Variants, options: AnimationOptions = {}) => {
-const { delay = 0 } = options;
+const { 
+    delay = 0, 
+    duration = 1
+} = options;
 
 return {
     initial: {
@@ -15,7 +19,7 @@ return {
     },
     animate: {
         y: "0",
-        transition: { delay, duration: 1, ease: "easeIn" }
+        transition: { delay, duration: duration, ease: "easeIn" }
     }
   };
 };
@@ -68,7 +72,7 @@ export const slideLeft = (variants: Variants, options: AnimationOptions = {}) =>
 
 
 export const fadeIn = (variants: Variants, options: AnimationOptions = {}) => {
-    const { delay = 0 } = options;
+    const { delay = 0, duration = 2 } = options;
 
     return {
         initial: {
@@ -76,7 +80,7 @@ export const fadeIn = (variants: Variants, options: AnimationOptions = {}) => {
         },
         animate: {
             opacity: 1,
-            transition: { delay, duration: 2, ease: "easeIn" }
+            transition: { delay, duration, ease: "easeIn" }
         }
     };
 }

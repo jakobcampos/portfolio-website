@@ -7,7 +7,7 @@ export const Container = ({
     className?: string 
   }) => {
   return(
-    <div className={classNames("mx-auto pt-[var(--navigation-height)]", className)}> 
+    <div className={classNames("overflow-hidden relative border-b-[.1rem]", className)}>  
         {children} 
     </div>
     );

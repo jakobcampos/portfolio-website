@@ -11,10 +11,14 @@ const config: Config = {
       space: ["Space Mono", "sans-serif"],
     },
     fontSize: {
-      title: ["10rem", "1.2"],
+      "title-lg": ["15.2rem", "1.2"],
+      title: ["7rem", "1.2"],
+      "head-lg": ["4.8rem", "1.2"],
       head: ["4.8rem", "1.2"],
-      "p-lg": ["2rem", "1.2"],
-      p: ["1.6rem", "1.2"],
+      "h2-lg": ["3rem", "1.2"],
+      h2: ["1.5rem", "1.2"],
+      "p-lg": ["1.5rem", "1.2"],
+      p: ["1.2rem", "1.2"],
     },
     colors: {
       background: "#FFFBF1",
@@ -39,6 +43,7 @@ const config: Config = {
       24: "9.6rem",
       32: "12.8rem",
       38: "15.2rem",
+      48: "19.2rem",
       64: "25.6rem",
       100: "40rem",
     }

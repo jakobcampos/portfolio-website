@@ -48,7 +48,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
         animate={{ opacity: 1, transition: {duration: 2, ease: "easeInOut" } }}
         className="text-p-lg m-24 text-white"
         >
-        <p> NOW LOADING: 4 </p>
+        <p>NOW LOADING:</p>
         <p id="path" />
         </motion.span>
       </div>

@@ -4,7 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
 * {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
 }
 
 @layer base {
@@ -16,7 +24,7 @@
   }
 
   html {
-    @apply bg-background font-space overflow-hidden lg:cursor-none;
+    @apply bg-background font-space scroll-smooth lg:cursor-none;
     font-size: 62.5%;
   }
 
@@ -26,6 +34,10 @@
 
   nav {
     @apply border text-center p-2
+  }
+
+  .font-outline {
+    -webkit-text-stroke: 1px white;
   }
 }
 

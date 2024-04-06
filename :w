@@ -1,0 +1,39 @@
+'use client';
+import { Container } from "../container"
+import { motion } from "framer-motion";
+import { slideLeft, slideRight, fadeIn, slideDown, slideUp } from "@/utils/animations";
+import { useScroll, useTransform, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
+import Image from "next/image";
+
+export const WorkHero = () => {
+
+const ref = useRef(null)
+const isInView = useInView(ref)
+const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start']
+  })
+
+const sm = useTransform(scrollYProgress, [0, 1], [-1000,350]) 
+const dm = useTransform(scrollYProgress, [0, 1], [350,-1000]) 
+
+useEffect(() => {
+  console.log("Element is in view: ", isInView)
+}, [isInView])
+
+
+  return(
+  <Container className="w-full h-screen absolute left-0 top-0">
+      <motion.main  animate={isInView ? "animate" : "initial"} variants={ fadeIn({}, {duration: 1}) } className="w-full h-screen absolute left-0 top-0">
+        <motion.div animate={isInView ? "animate" : "initial"} variants={slideDown({})} ref={ref} style={{x: sm}} className="absolute -left-64 top-16 flex flex-col z-10" >
+          <h1 className="text-[16rem] tracking-tight whitespace-nowrap">Lets work.Lets work.Lets work.</h1>
+        </motion.div>
+        <motion.div animate={isInView ? "animate" : "initial"} variants={slideUp({})} ref={ref} style={{x: dm}} className="absolute -left-64 top-48 flex flex-col z-10" >
+          <h1 className="text-[16rem] tracking-tight whitespace-nowrap">together.together.together.</h1>
+        </motion.div>
+      </motion.main>
+  </Container>
+  );
+};
+

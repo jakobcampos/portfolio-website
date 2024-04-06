@@ -41,8 +41,8 @@ const Clock = ({ className }: ClockProps) => {
     <div>
       {currentTime && (
         <div>
-          <p className={`text-p-lg lg:text-head ${path === '/contact' ? 'text-slate' : 'text-stone'}`}>{currentTime}</p>
-          <p className={`text-p lg:text-p-lg ${path === '/contact' ? 'text-white' : ''}`}>
+          <p className="text-h2 lg:text-h2-lg text-stone">{currentTime}</p>
+          <p className="text-p lg:text-p-lg">
             in Los Angeles, California
           </p>
         </div>

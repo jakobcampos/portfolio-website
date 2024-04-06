@@ -12,7 +12,7 @@ export const Footer = () => {
         <div className="flex items-end lg:p-16 lg:pt-0">
           <Clock/>
           <nav className="ml-auto">
-            <ul className="flex items-center h-full w-full gap-8 [&_a]:text-p">
+            <ul className="flex items-center h-full w-full gap-8 [&_a]:text-p lg:[&_a]:text-p-lg ">
               <li> <MagneticButton><Link href="https://github.com/jakobcampos"> <button>github</button> </Link></MagneticButton></li>
               <li> <MagneticButton><Link href="https://instagram.com/jakobdevs"> <button>instagram</button> </Link></MagneticButton></li>
               <li> <MagneticButton><Link href="https://www.linkedin.com/in/iakobcampos/"> <button>linked_in</button> </Link></MagneticButton></li>
