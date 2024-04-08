@@ -23,7 +23,7 @@ useEffect(() => {
 
 
   return(
-  <Container className="px-16 -py-16 bg-[#28282B] w-full h-screen absolute left-0 top-0">
+  <Container className="lg:px-16 lg:-py-32 bg-[#28282B] w-full h-screen absolute left-0 top-0">
       <motion.div  style={{y: sm}} className="flex flex-col z-10" >
           <motion.div {...fadeIn({})} className="absolute left-0 top-16  w-full h-screen -z-10">
             <Image src="/svgs/Skill2.svg" alt="skills" width={100} height={100} style={{ width: '100%', height: '90%' }}/>

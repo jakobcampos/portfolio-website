@@ -24,7 +24,7 @@
   }
 
   html {
-    @apply bg-background font-space scroll-smooth lg:cursor-none;
+    @apply bg-background font-space scroll-smooth tracking-widest lg:cursor-none;
     font-size: 62.5%;
   }
 

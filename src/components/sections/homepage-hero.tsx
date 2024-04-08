@@ -61,7 +61,7 @@ useEffect(() => {
         </motion.div>
 
         <div className="transition-all duration-500 ease-out lg:ease-in opacity-0 lg:opacity-100">
-          <motion.div {...slideLeft({})} className="absolute bottom-[30rem] left-[46rem] w-full h-[800px] -z-10">
+          <motion.div {...slideLeft({})} className="absolute bottom-[30rem] left-[47rem] w-full h-[800px] -z-10">
             <Image src="/svgs/art.svg" alt="Blobs SVG" width={100} height={100} style={{ width: '150%', height: '150%' }}/>
           </motion.div>
         </div>

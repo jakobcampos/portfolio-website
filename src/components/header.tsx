@@ -17,7 +17,6 @@ export const Header = () => {
         <nav className="h-full ml-auto">
           <ul className="flex items-center gap-8">
             <li> <MagneticButton><TransitionLink href="/info" label="info"/></MagneticButton></li>
-            <li> <MagneticButton><TransitionLink href="/projects" label="projects"/></MagneticButton></li>
             <li> <MagneticButton><TransitionLink href="/contact" label="contact"/></MagneticButton></li>
           </ul>
         </nav>

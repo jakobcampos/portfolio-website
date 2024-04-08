@@ -16,6 +16,7 @@ export const Footer = () => {
               <li> <MagneticButton><Link href="https://github.com/jakobcampos"> <button>github</button> </Link></MagneticButton></li>
               <li> <MagneticButton><Link href="https://instagram.com/jakobdevs"> <button>instagram</button> </Link></MagneticButton></li>
               <li> <MagneticButton><Link href="https://www.linkedin.com/in/iakobcampos/"> <button>linked_in</button> </Link></MagneticButton></li>
+              <li> <MagneticButton><Link href=""> <button>resume</button> </Link></MagneticButton></li>
             </ul>
           </nav>
         </div>

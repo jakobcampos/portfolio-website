@@ -23,7 +23,7 @@ const Cursor = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  const flareSize = isPointer ? 60 : 30;
+  const flareSize = isPointer ? 90 : 30;
 
   const cursorStyle = isPointer ? { left: "-100px", top: "-100px" } : {};
 

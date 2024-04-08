@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react"
 interface Props {
   href: string
   label: string
-  className: string
+  className?: string
 }
 
 const TransitionLink = ({ href, label, className="text-p lg:text-p-lg" }: Props) => {
