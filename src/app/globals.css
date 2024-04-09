@@ -76,3 +76,13 @@
   transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
     opacity 0.2s ease-in-out;
 }
+
+.container {
+    overflow-y: auto;
+    scroll-snap-type: y mandatory; /* Snap to the closest child element */
+}
+
+/* Define snap points for child elements */
+.child {
+    scroll-snap-align: start; /* Snap to the start of each child element */
+}

@@ -25,7 +25,7 @@ useEffect(() => {
 
 
   return(
-  <Container className="w-full h-screen absolute left-0 top-0">
+  <Container className="w-full h-screen absolute left-0 top-0 snap-y">
       <motion.main  animate={isInView ? "animate" : "initial"} variants={ fadeIn({}, {duration: 1}) } className="w-full h-screen absolute left-0 top-0">
         <motion.div ref={ref} style={{x: sm}} className="absolute -left-[31rem] lg:-left-[50rem] top-48 lg:top-16 flex flex-col z-10" >
           <h1 className="text-title lg:text-[16rem] tracking-tight whitespace-nowrap">
