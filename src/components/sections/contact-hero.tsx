@@ -1,7 +1,6 @@
 'use client';
 import { Container } from "../container";
 import Image from "next/image";
-import TransitionLink from "../TransitionLink";
 import { motion } from "framer-motion";
 import { slideLeft, slideRight } from "@/utils/animations";
 
@@ -13,7 +12,7 @@ export const ContactHero = () => {
       </motion.div>
 
       <motion.div {...slideLeft({})} className="flex flex-col z-10">
-        <h1 className="flex justify-end text-title"> CONTACT<span className="text-stone">:</span> </h1>
+        <h1 className="flex justify-start lg:justify-end text-h2-lg lg:text-title"> CONTACT<span className="text-stone">:</span> </h1>
         <br/>
         <p className="text-p-lg">(562) 525-0938 </p>
         <p className="text-p-lg">jakobcampos.jc@gmail.com</p>

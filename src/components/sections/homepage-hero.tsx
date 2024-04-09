@@ -28,7 +28,7 @@ useEffect(() => {
 
   return (
       <Container className="w-full h-screen flex flex-col justify-center items-center lg:justify-start lg:items-start lg:flex lg:px-32">
-        <motion.div {...fadeIn({})} style={{y: sm}} className="absolute flex flex-col justify-center lg:ml-[11rem] mb-[70rem]">
+        <motion.div {...fadeIn({})} style={{y: sm}} className="absolute flex flex-col justify-center lg:ml-[11rem] mb-[72rem]">
           <h1 className="text-title lg:text-title-lg z-20">
             <span className="underline decoration-stone">
               Jakob
@@ -42,10 +42,10 @@ useEffect(() => {
           </h1>
         </motion.div>
 
-        <motion.div {...slideRight({})} className="absolute flex justify-center items-center bottom-[15rem] lg:bottom-[20rem] lg:left-[4rem] w-[300px] h-[300px] blur">
+        <motion.div {...slideRight({})} className="absolute flex justify-center items-center bottom-48 lg:bottom-[20rem] lg:left-[4rem] w-[300px] h-[300px] blur">
           <Lottie animationData={animationData} loop autoplay/>
         </motion.div>
-        <motion.div {...slideRight({})} className="lg:absolute lg:left-[14rem] lg:bottom-[34rem] bottom-[28rem] absolute flex flex-col justify-center items-center lg:items-start text-p-lg text-white w-32 bottom-64">
+        <motion.div {...slideRight({})} className="lg:absolute lg:left-[14rem] lg:bottom-[34rem] bottom-[34rem] absolute flex flex-col justify-center items-center lg:items-start text-p-lg text-white w-32 bottom-64">
           <p></p>
           <Typewriter 
             options={{

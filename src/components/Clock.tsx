@@ -40,7 +40,7 @@ const Clock = ({ className }: ClockProps) => {
   return (
     <div>
       {currentTime && (
-        <div>
+        <div className={className}>
           <p className="text-h2 lg:text-h2-lg text-stone">{currentTime}</p>
           <p className="text-p lg:text-p-lg">
             in Los Angeles, California

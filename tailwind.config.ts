@@ -18,6 +18,7 @@ const config: Config = {
       "h2-lg": ["3rem", "1.2"],
       h2: ["1.5rem", "1.2"],
       "p-lg": ["1.5rem", "1.2"],
+      "p-sm": ["1.1rem", "1.2"],
       p: ["1.2rem", "1.2"],
     },
     colors: {
@@ -36,6 +37,7 @@ const config: Config = {
       2: "0.8rem",
       4: "1.6rem",
       5: "2rem",
+      6: "2.4rem",
       8: "3.2rem",
       12: "4.8rem",
       16: "6.4rem",

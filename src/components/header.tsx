@@ -9,7 +9,7 @@ export const Header = () => {
 
     <header className="fixed top-0 left-0 w-full z-20">
     <motion.div { ...slideDown({}) }>    
-      <div className="flex p-16 pb-0">
+      <div className="flex p-8 lg:p-16 pb-0">
         <div className="border p-2">
           <MagneticButton><TransitionLink href="/" label="home"/></MagneticButton>
         </div>
