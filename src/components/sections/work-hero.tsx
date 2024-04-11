@@ -1,5 +1,5 @@
 'use client';
-import { Container } from "../container"
+import { Container } from "../Container"
 import { motion } from "framer-motion";
 import { slideLeft, slideRight, fadeIn, slideDown, slideUp } from "@/utils/animations";
 import { useScroll, useTransform, useInView } from "framer-motion";
@@ -46,7 +46,7 @@ useEffect(() => {
           <p className="text-h2 lg:text-h2-lg"> Planning a project or business? </p>
           <p className="text-h2 lg:text-h2-lg"> I'd love to hear more.</p>
           <br/>
-          <TransitionLink href="/enquiries" label="Enquire now" className="border-b-2 text-h2 lg:text-h2-lg hover:border-b-[1rem] transition-all duration-500 hover:text-stone"/>
+          <TransitionLink href="/contact" label="Contact me" className="border-b-2 text-h2 lg:text-h2-lg hover:border-b-[1rem] transition-all duration-500 hover:text-stone"/>
         </motion.div>
       </motion.main>
   </Container>

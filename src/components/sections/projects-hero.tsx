@@ -1,5 +1,5 @@
 'use client';
-import { Container } from "@/components/container"
+import { Container } from "@/components/Container"
 import { motion } from "framer-motion";
 import { slideDown, slideLeft, slideRight } from "@/utils/animations";
 

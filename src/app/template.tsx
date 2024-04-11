@@ -5,8 +5,8 @@ import { useEffect } from "react"
 import { motion } from "framer-motion"
 import { usePathname } from "next/navigation"
 import Cursor from "@/components/Cursor"
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export default function Template({ children }: { children: React.ReactNode }) {
   const path = usePathname();
@@ -18,7 +18,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
     <div>
       <div
         id="banner-1"
-        className="min-h-screen bg-stone z-40 fixed top-0 left-0 w-full"
+        className="min-h-screen bg-[#d1c9bc] z-40 fixed top-0 left-0 w-full"
       />
 
       <div
@@ -37,7 +37,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
       <div
         id="banner-3"
-        className="min-h-screen bg-stone z-50 fixed top-0 left-0 w-full"
+        className="min-h-screen bg-[#d1c9bc] z-50 fixed top-0 left-0 w-full"
       />
       <div
         id="banner-4"

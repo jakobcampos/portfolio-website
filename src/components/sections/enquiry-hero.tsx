@@ -1,5 +1,5 @@
 'use client';
-import { Container } from "@/components/container"
+import { Container } from "@/components/Container"
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { slideDown, slideLeft, slideRight } from "@/utils/animations";
@@ -20,7 +20,7 @@ export const EnquiryHero = () => {
 
     <Container className="w-full h-screen flex justify-center">
       <motion.div {...slideDown({})} className="w-1/2 lg:w-1/4  py-[11rem] lg:py-48 flex flex-col z-10 text-p lg:text-p-lg">
-        <h1 className="pb-8 flex justify-center text-h2 lg:text-h2-lg"> Enquiry<span className="text-stone">:</span> </h1>
+        <h1 className="pb-8 flex justify-center text-h2 lg:text-h2-lg">Contact<span className="text-stone">:</span> </h1>
 
         <form className="w-full h-screen flex flex-col gap-8" onSubmit={handleSubmit}>
           <div id="name" className="w-full flex flex-col gap-2">

@@ -1,0 +1,53 @@
+'use client';
+import { Container } from "@/components/Container"
+import { motion, useInView } from "framer-motion";
+import { slideDown, slideUp, slideLeft, slideRight } from "@/utils/animations";
+import { useEffect, useRef } from "react";
+import { inView } from "framer-motion/dom";
+
+export const SkillsHero = () => {
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, {once: true, margin: "0px 0px 300px 0px"})
+
+  return(
+  <Container className="w-full h-screen flex flex-col gap-4 px-8 pt-32">
+      <div id="upper-cards" className="flex flex-col lg:flex-row gap-4">
+      <motion.h1 ref={ref} initial="initial" animate={isInView ? "animate" : ""} variants={slideUp({})} className="absolute w-full h-screen top-0 left-0 px-8 py-[2.4rem] text-h2-lg lg:text-title lg:text-[12rem] text-brown">
+        SKILLS
+      </motion.h1>
+      <motion.div {...slideUp({})} className="p-8 flex flex-col border">
+            <h1 className="text-h2 lg:text-h2-lg">Active Directory</h1>
+            <ul className="list-disc text-p lg:text-h2 flex flex-col p-4 gap-4">
+              <li>Managing organizational units</li>
+              <li>Creating security, distribution<br/>and shared mailboxes</li>
+            </ul>
+      </motion.div>
+      <motion.div {...slideUp({}, {delay: .1})} className="text-h2 p-8 gap-4 flex flex-col border">    
+          <h1>Unix</h1>
+          <h1>Jamf</h1>
+          <h1>Microsoft 365</h1>
+          <h1>Troubleshooting</h1>
+          <h1>Project Management</h1>
+      </motion.div>
+      </div>
+      <div id="bottom-cards" className="flex flex-col lg:flex-row gap-4">
+      <motion.div {...slideUp({})} className="p-8 flex flex-col border">
+            <h1 className="text-h2 lg:text-h2-lg">Ticketing Systems</h1>
+            <h2 className="text-p-lg mt-2">ServiceNow</h2>
+            <ul className="list-disc text-p lg:text-h2 flex flex-col p-4 gap-4">
+              <li>Capable of handling a variety of<br/>incidents, tasks, and problems</li>
+            </ul>
+      </motion.div>
+      <motion.div {...slideUp({}, {delay: .1})} className="p-8 flex flex-col border">
+            <h1 className="text-h2 lg:text-h2-lg">Networking</h1>
+            <ul className="list-disc text-p lg:text-h2 flex flex-col p-4 gap-4">
+              <li>Familiar with protocols such as:<br/>TCP/IP, UDP, DNS, etc.</li>
+              <li>Capable of OSI model troubleshooting</li>
+            </ul>
+      </motion.div>
+      </div>
+  </Container>
+  );
+};
+

@@ -22,14 +22,15 @@ const config: Config = {
       p: ["1.2rem", "1.2"],
     },
     colors: {
-      background: "#FFFBF1",
+      background: "#fffceb",
       white: "#fff",
       red: "#ff0000",
       blue: "#0000ff",
       green: "#00ff00",
-      stone: "#a8a29e",
+      stone: "#808080",
       slate: "#FDF3DE",
-      dark: "#0f0f0f"
+      brown: "#544B44",
+      dark: "#000000"
     },
     spacing: {
       0: "0",
@@ -39,6 +40,7 @@ const config: Config = {
       5: "2rem",
       6: "2.4rem",
       8: "3.2rem",
+      10: "4rem",
       12: "4.8rem",
       16: "6.4rem",
       20: "8rem",

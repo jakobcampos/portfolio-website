@@ -1,6 +1,7 @@
 'use client';
 import MagneticButton from "./MagneticButton";
 import TransitionLink from "./TransitionLink";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { slideDown } from "@/utils/animations";
 
@@ -15,9 +16,9 @@ export const Header = () => {
         </div>
 
         <nav className="h-full ml-auto">
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-8 [&_a]:text-p-sm lg:[&_a]:text-p-lg">
             <li> <MagneticButton><TransitionLink href="/info" label="info"/></MagneticButton></li>
-            <li> <MagneticButton><TransitionLink href="/contact" label="contact"/></MagneticButton></li>
+            <li> <MagneticButton><Link href="./jakobcampos.pdf#view=Fit"><button>resume</button> </Link></MagneticButton></li>
           </ul>
         </nav>
       </div>

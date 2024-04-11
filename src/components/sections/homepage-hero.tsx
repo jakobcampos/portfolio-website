@@ -1,41 +1,35 @@
 'use client';
-import { Container } from "../container"
+import { Container } from "../Container"
 import Image from "next/image";
 import animationData from '../../../public/animations/blob-black.json';
 import dynamic from 'next/dynamic';
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 const Typewriter = dynamic (()=>  import('typewriter-effect'), {ssr: false});
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { fadeIn, slideRight, slideLeft } from "@/utils/animations";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 
 export const HomepageHero = () => {
 
   
 const ref = useRef(null)
-const isInView = useInView(ref)
 const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'end start']
   })
 
-const sm = useTransform(scrollYProgress, [0, 1], [-250, 1500])
-
-
-useEffect(() => {
-  console.log("Element is in view: ", isInView)
-}, [isInView])
+const sm = useTransform(scrollYProgress, [0, 1], [-150, 1400])
 
   return (
       <Container className="w-full h-screen flex flex-col justify-center items-center lg:justify-start lg:items-start lg:flex lg:px-32">
         <motion.div {...fadeIn({})} style={{y: sm}} className="absolute flex flex-col justify-center lg:ml-[11rem] mb-[72rem]">
           <h1 className="text-title lg:text-title-lg z-20">
-            <span className="underline decoration-stone">
+            <span className="underline decoration-8">
               Jakob
             </span>
             <br/>
             &nbsp;&nbsp;
-            <span className="underline decoration-stone">Campo&nbsp; 
+            <span className="underline decoration-8">Campo&nbsp; 
               </span>
               <span className="lg:text-[#485c64] lg:font-outline absolute right-0">s</span>
 
@@ -46,7 +40,6 @@ useEffect(() => {
           <Lottie animationData={animationData} loop autoplay/>
         </motion.div>
         <motion.div {...slideRight({})} className="lg:absolute lg:left-[14rem] lg:bottom-[34rem] bottom-[34rem] absolute flex flex-col justify-center items-center lg:items-start text-p-lg text-white w-32 bottom-64">
-          <p></p>
           <Typewriter 
             options={{
               strings: [

@@ -1,7 +1,6 @@
 "use client"
 import { usePathname, useRouter } from "next/navigation"
 import { animatePageOut } from "@/utils/animations"
-import { useGSAP } from "@gsap/react"
 
 interface Props {
   href: string

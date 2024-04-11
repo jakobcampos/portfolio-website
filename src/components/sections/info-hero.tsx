@@ -1,5 +1,5 @@
 'use client';
-import { Container } from "@/components/container"
+import { Container } from "@/components/Container"
 import { motion } from "framer-motion";
 import { slideDown, slideUp, slideLeft, slideRight } from "@/utils/animations";
 import { WorkHero } from "./work-hero";
@@ -21,9 +21,6 @@ export const InfoHero = () => {
         <p>Best Regards,</p>
         <p>Jakob Campos</p>
         </div>
-        <p className="my-8 items-center border bg-background/80 text-center p-2 w-64">Certifications</p>
-        <p>Fullerton College</p>
-        <p>Associates in Science — Computer Science</p>
       </motion.div>
       <motion.div {...slideDown({})} className="absolute -left-[15rem] lg:left-16 top-4 lg:top-32 w-64 h-64">
         <Image src="./svgs/cat.svg" alt="cat" fill className="opacity-0 lg:opacity-100 scale-x-[-1] transition-opacity duration-500"/>

@@ -21,6 +21,7 @@
     --navigation-height: 6.4rem;
     --footer-height: 12.8rem;
     --hero-height: calc( 100vh - (7 * var(--navigation-height) ) + var(--footer-height) );
+    overflow-x: hidden
   }
 
   html {
@@ -80,9 +81,4 @@
 .container {
     overflow-y: auto;
     scroll-snap-type: y mandatory; /* Snap to the closest child element */
-}
-
-/* Define snap points for child elements */
-.child {
-    scroll-snap-align: start; /* Snap to the start of each child element */
 }
