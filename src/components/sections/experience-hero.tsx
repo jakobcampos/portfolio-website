@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
 export const ExperienceHero = () => {
 
   const ref = useRef(null)
-  const isInView = useInView(ref, {once: true, margin: "0px 0px -300px 0px"})
+  const isInView = useInView(ref, {once: true, margin: "0px 0px 300px 0px"})
 
   return(
   <Container className="w-full h-screen flex flex-col mt-16 gap-16">

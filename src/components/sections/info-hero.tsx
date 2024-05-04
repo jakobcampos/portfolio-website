@@ -10,7 +10,7 @@ export const InfoHero = () => {
   <Container className="w-full h-screen flex justify-center">
       <motion.div {...slideDown({})} className="px-8 lg:px-8 pt-[10rem] md:pt-48 lg:p-48 flex flex-col z-10 text-p lg:text-p-lg">
         <h1 className="pb-8 flex justify-center text-h2-lg lg:text-title"> INFO  <span className="text-stone">:</span> </h1>
-        <div className="w-full">
+        <div className="w-full flex flex-col gap-4">
         <p>Hey,</p>
         <br/>
         <p>I'm a 22-year-old developer from Los Angeles, California.</p>

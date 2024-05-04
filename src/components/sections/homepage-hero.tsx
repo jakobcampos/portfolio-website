@@ -18,7 +18,7 @@ const { scrollYProgress } = useScroll({
     offset: ['start end', 'end start']
   })
 
-const sm = useTransform(scrollYProgress, [0, 1], [-150, 1400])
+const sm = useTransform(scrollYProgress, [0, 1], [-150, 1600])
 
   return (
       <Container className="w-full h-screen flex flex-col justify-center items-center lg:justify-start lg:items-start lg:flex lg:px-32">
